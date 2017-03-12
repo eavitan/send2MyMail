@@ -20,6 +20,7 @@
  * @subpackage B2reader/includes
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
+ if (!class_exists('s2mm_B2reader_Deactivator')) {
 class s2mm_B2reader_Deactivator {
 
   /**
@@ -31,4 +32,5 @@ class s2mm_B2reader_Deactivator {
 	 */
 	public static function deactivate() {
 	}
+}
 }

@@ -20,6 +20,7 @@
  * @subpackage B2reader/includes
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
+ if (!class_exists('s2mm_B2reader_Activator')) {
 class s2mm_B2reader_Activator {
   /**
 	 * On activation create a page and remember it.
@@ -32,4 +33,5 @@ class s2mm_B2reader_Activator {
 	public static function activate() {
 	}
 
+}
 }

@@ -27,6 +27,7 @@
  * @subpackage B2reader/includes
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
+ if (!class_exists('s2mm_B2reader')) {
 class s2mm_B2reader {
 
 	/**
@@ -233,4 +234,5 @@ class s2mm_B2reader {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 	}
+}
 }

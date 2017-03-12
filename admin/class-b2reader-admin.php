@@ -20,6 +20,7 @@
  * @subpackage B2reader/admin
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
+ if (!class_exists('s2mm_B2reader_Admin')) {
 class s2mm_B2reader_Admin {
 
 	/**
@@ -406,4 +407,5 @@ public function sandbox_add_settings_field_multiple_checkbox( $args ) {
 	<textarea style="width: 350px;height: 60px;" name="<?php echo $this->plugin_name . '-settings[' . esc_attr($field_id) . ']'; ?>"  id="<?php echo $this->plugin_name . '-settings[' . esc_attr($field_id) . ']'; ?>" ><?php echo esc_attr( $option ); ?></textarea>
  	<?php
  }
+}
 }

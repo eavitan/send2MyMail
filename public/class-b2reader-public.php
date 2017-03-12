@@ -20,6 +20,7 @@
  * @subpackage B2reader/public
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
+if (!class_exists('s2mm_B2reader_Public')) {
 class s2mm_B2reader_Public {
 
 	/**
@@ -267,5 +268,6 @@ class s2mm_B2reader_Public {
 		return wp_send_json( $return );
 	}
 
+}
 }
 }

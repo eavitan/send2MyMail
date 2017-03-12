@@ -54,8 +54,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-b2reader.php';
  */
  if(!function_exists('s2mm_run_send_2_ma_mail')){
 	function s2mm_run_send_2_ma_mail() {
-		$plugin = new s2mm_B2reader();
-		$plugin->run();
+		if (class_exists('s2mm_B2reader')) {
+			$plugin = new s2mm_B2reader();
+			$plugin->run();
+		}
 	}
 }
 s2mm_run_send_2_ma_mail();
