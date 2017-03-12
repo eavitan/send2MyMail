@@ -20,7 +20,7 @@
  * @subpackage B2reader/public
  * @author     Eyal Avitan <eyal@netingit.co.il>
  */
-if (!class_exists('s2mm_B2reader_Public')) {
+ if (!class_exists('s2mm_B2reader_Public')) {
 class s2mm_B2reader_Public {
 
 	/**
@@ -227,33 +227,36 @@ class s2mm_B2reader_Public {
 	$email_missing = $options['send-to-email-missing'];
 	$article_sent = $options['send-to-item-sent'];
 
+
 	if(!empty($_POST['email_to_send_the_article'])){
 		$send_to_mail_subject = $options['send-to-mail-subject'];
 		$send_to_mail_content = $options['send-to-mail-content'];
 
 		$to = sanitize_text_field($_POST['email_to_send_the_article']);
 		$subject = esc_html($send_to_mail_subject);
-		$message = esc_html($send_to_mail_content) . "\r\n\r\n" .esc_url($item_url);
-		$headers = '';
-		$attachments = array();
+		$message = esc_html($send_to_mail_content) . "\r\n" .esc_url($item_url);
+
+		$adminEmail = get_option('admin_email');
+		$siteName = get_option('blogname');
+		$headers = 'From: '.$siteName.' <'.$adminEmail.'>';
 
 		if($_POST['approve-newsletters'] == 'false'){
 			$return = array(
 				'is_sent' => 0,
-				'msg' => esc_js($no_approval) . esc_html($_POST['email_to_send_the_article'])
+				'msg' => esc_js($no_approval)  .' '.  esc_html($_POST['email_to_send_the_article'])
 			);
 			return wp_send_json( $return );
 		}
-		if(1 == 1 || wp_mail($to,$subject,$message,$headers,$attachments)){
+		if(wp_mail($to,$subject,$message,$headers)){
 			$return = array(
 				'is_sent' => 1,
-				'msg' => esc_js($article_sent) . esc_html($_POST['email_to_send_the_article']),
+				'msg' => esc_js($article_sent) .' '. esc_html($_POST['email_to_send_the_article']),
 				'item_url'=>$item_url
 			);
 		}else{
 			$return = array(
 				'is_sent' => 0,
-				'msg' => __('Error sending to mail: ') . esc_html($_POST['email_to_send_the_article']),
+				'msg' => __('Error sending to mail: ')  .' '.  esc_html($_POST['email_to_send_the_article']),
 				'item_url'=>esc_url($item_url)
 			);
 

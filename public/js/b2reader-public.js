@@ -7,13 +7,13 @@ jQuery(document).ready(function($) {
 		$appendTo.append($content);
 		setTimeout(function() {
 			$('.send-ot-mail-notification').addClass('active');
-		}, 2500);
+		}, 1);
 		setTimeout(function() {
 			$('.send-ot-mail-notification').removeClass('active');
 			setTimeout(function() {
 				$('.send-ot-mail-notification').remove();
-			}, 2500);
-		}, 32500);
+			}, 1);
+		}, 10000);
 
 	}
 
@@ -41,6 +41,8 @@ jQuery(document).ready(function($) {
 			success: function(data) {
 				if ( data.is_sent == true ) {
 					$this.removeClass('saved');
+					sentomailNotification( data.msg,data.item_url);
+					$('#send-to-mail-box form').hide(250);
 				} else {
 					$this.addClass('saved');
 					sentomailNotification( data.msg,data.item_url);
