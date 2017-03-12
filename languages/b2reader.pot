@@ -1,0 +1,74 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"POT-Creation-Date: 2017-03-09 12:51+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco - https://localise.biz/"
+
+msgid "You forgot to enter an email address"
+msgstr ""
+
+msgid "we sent you the mail succesfuly"
+msgstr ""
+
+msgid "You wanted to read this article"
+msgstr ""
+
+msgid "You need to accept us sending you this mail"
+msgstr ""
+
+msgid "I Approve accepting newsletters"
+msgstr ""
+
+msgid "If checked, style will display Rtl version."
+msgstr ""
+
+msgid "If checked, our style will be used."
+msgstr ""
+
+msgid "The email input wil append only the checked post types."
+msgstr ""
+
+msgid "Our Styles"
+msgstr ""
+
+msgid "Rtl"
+msgstr ""
+
+msgid "Post Types"
+msgstr ""
+
+msgid "Settings Send to mail"
+msgstr ""
+
+msgid "approval text."
+msgstr ""
+
+msgid "Message if reader doesnt approve newsletters."
+msgstr ""
+
+msgid "Message if email missing."
+msgstr ""
+
+msgid "Message if article sent."
+msgstr ""
+
+msgid "Mail Subject."
+msgstr ""
+
+msgid "send to mail content."
+msgstr ""
+
+msgid "offer to mail content."
+msgstr ""
+
+msgid "Error, duplicate 1: offer to mail content."
+msgstr ""
+
+msgid "Error, duplicate 1: Settings Send to mail"
+msgstr ""
+
+msgid "Error, duplicate 1: Post Types"
+msgstr ""

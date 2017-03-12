@@ -1,0 +1,113 @@
+
+/**
+ * Notification
+ */
+.send-ot-mail-notification {
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+	background-color: #f6f7f9;
+	border-top: 1px solid #dddfe2;
+	font-size: 0;
+	line-height: 0;
+	padding: 10px;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.send-ot-mail-notification.active {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.send-ot-mail-notification span,
+.send-ot-mail-notification a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.send-ot-mail-notification span.notification-icon {
+	width: 18px;
+	height: 16px;
+	background-image: url("../img/mail-icon.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px 16px;
+	margin-right: 10px;
+}
+.send-ot-mail-notification a.notification-link {
+	font-size: 14px;
+	line-height: 16px;
+	margin-left: 10px;
+	color: #4080FF;
+	box-shadow: none !important;
+}
+
+p.s2mm_top_content{
+	margin-bottom:0px;
+}
+
+#send-to-mail-box {
+margin-bottom:15px;
+text-align:left;
+}
+
+#send-to-mail-box input[type="email"] {
+width: 100%;
+height:50px;
+border: 1px;
+}
+#send-to-mail-box button {
+position: relative;
+top: -50px;
+float: right;
+height:50px;
+margin:0px !important;
+border: 0;
+padding: 11px;
+}
+
+
+/**
+ * Responsive
+ */
+
+@media only screen and (max-width: 434px) {
+	#send-to-mail-box button {
+    top: -30px;
+    height: 30px;
+    padding: 7px 8px;
+	}
+	#send-to-mail-box input[type="email"] {
+	    height: 30px;
+	}
+}
+/*
+ * rtl
+ */
+.s2mm-rtl *{
+	text-align:right;
+	direction:rtl;
+}
+.s2mm-rtl .approve-registration-s2mm{
+
+}
+#send-to-mail-box.s2mm-rtl button {
+float: left;
+}

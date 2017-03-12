@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Send 2 ma mail\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-09 12:47+0000\n"
+"PO-Revision-Date: 2017-03-09 12:47+0000\n"
+"Last-Translator: eavitan <etrproject@gmail.com>\n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+msgid "Send 2 ma mail"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"improve you content readability by offering your audience to send the page "
+"content to their mail."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://netingit.fr"
+msgstr ""
+
+#. Author of the plugin
+msgid "Eyal Avitan"
+msgstr ""
