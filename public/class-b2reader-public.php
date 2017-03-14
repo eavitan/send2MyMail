@@ -232,8 +232,8 @@ class s2mm_B2reader_Public {
 		$send_to_mail_subject = $options['send-to-mail-subject'];
 		$send_to_mail_content = $options['send-to-mail-content'];
 
-		$to = sanitize_text_field($_POST['email_to_send_the_article']);
-		$subject = esc_html($send_to_mail_subject);
+		$to = sanitize_email($_POST['email_to_send_the_article']);
+		$subject = sanitize_text_field($send_to_mail_subject);
 		$message = esc_html($send_to_mail_content) . "\r\n" .esc_url($item_url);
 
 		$adminEmail = get_option('admin_email');
